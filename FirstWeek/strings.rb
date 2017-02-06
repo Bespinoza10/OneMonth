@@ -5,13 +5,16 @@
 # \ is to join mutiple lines in a string to be one.
 
 kanye_qoute ="My greatest pain in life is that I will never be able to see myself perform live"
+puts kanye_qoute
+
 
 # The quote below uses single quotes and double quotes to show the phrase that they were saying. But the 1+1 doesn't work on here. Why? Because they don't work with single qoutes. What do we do now?
 hamilton_quote_wrong = 'Well, the word got around, they said, "This kid is insane, man" #{1+1}'
+puts hamilton_quote_wrong
+
+
 # As you can see below, we changes the single qoutes to double. But we added a backslash before and after the phrase to tell ruby that those double quoutes wont interfere with the qoutes that are in the begining and at the end of the whole string
 hamilton_quote = "Well, the word got around, they said, \"This kid is insane, man\" #{1+1}"
-puts kanye_qoute
-puts hamilton_quote_wrong
 puts hamilton_quote
 
 
@@ -36,4 +39,5 @@ DE NUEVO E VUELTO A SONREIR,
 YO NUNK HABIA KERIDO ASI.
 """
 
+# As you can see the qoute above, all the characters are uppercase. The code below is shooting out the quoute in lowercase.
 puts spanish_girl_song.downcase
