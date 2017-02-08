@@ -107,9 +107,6 @@
       #   'alone.'
 
 
-
-
-
       # This method breaks up text into words for us.
         def break_words(text)
           words = text.split(' ')
