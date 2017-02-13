@@ -31,3 +31,17 @@ puts "These are the Fruits: #{fruits}"
 puts "This is Fruit #1: #{fruits[0]}"
 puts "This is Fruit #2: #{fruits[1]}"
 puts "This is Fruit #3: #{fruits[2]}"
+
+# You can add more to an array. You first call the array you want to add to and then use "<<" following with quotes add your new item. See example below
+fruits << "Kiwis"
+puts "This is Fruit #4: #{fruits[3]}"
+puts "These are my fruits: #{fruits}"
+
+# You can also turn a sentence into an array of words.
+sentence = "Ain't nobody got time for that"
+words = sentence.split
+  # You can also shuffle words in the array.
+shuffled_words = words.shuffle
+
+puts "The words are: #{words}"
+puts "The shuffled words are: #{shuffled_words}"
