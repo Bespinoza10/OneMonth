@@ -18,7 +18,9 @@
     #   end
     # end
 
-
+    # puts ""
+    # puts ""
+    # puts "Lets take a different aproach to this problem. Maybe a more simpler way of doing it."
 # Lets take a different aproach to this problem. Maybe a more simpler way of doing it.
     # (1..100).each do |n|
     #   d3 = n % 3 == 0
@@ -38,7 +40,7 @@ puts ""
 puts ""
 puts ""
 puts "Hmmm... Maybe we can go a bit much simpler.."
-  # So basically instead of using .each i am using the method .upto which basically acomplishes the same thing. Then I call puts "FizzBuzz" if the number is divisible by 15 (which means 3 and 5). Then I call puts "Buzz" if the number is divisible by 5. Then I call puts "Fizz" if the number is divisible by 3.
+  # So basically instead of using .each i am using the method .upto which basically shows numbers from 1 up to 100. Then I call puts "FizzBuzz" if the number is divisible by 15 (which means 3 and 5). Then I call puts "Buzz" if the number is divisible by 5. Then I call puts "Fizz" if the number is divisible by 3.
     1.upto(100) do |n|
       puts "FizzBuzz" if n % 15 == 0
       puts "Buzz" if n % 5 == 0
