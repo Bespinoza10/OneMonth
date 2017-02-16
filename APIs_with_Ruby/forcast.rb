@@ -35,7 +35,7 @@ require 'geocoder'
     #
     # puts "#{forecast.summary} and #{forecast.temperature} but feels like #{forecast.apparentTemperature} in Nashville TN"
 
-# Third Attempt
+# Third Attempt FUNCTION
 
     def current_weather
 
@@ -44,8 +44,9 @@ require 'geocoder'
       current_location = gets.chomp
       special_chars = "!@#$%^&*()_+[]{}|/?><.`;:`+=-"
       regex = /[#{special_chars.gsub(/./){|char| "\\#{char}"}}]/
-      if current_location =~ regex
-        puts "OOPS! Seems like you added a special character."
+      blank = ""
+      if current_location =~ regex || blank
+        puts "OOPS! Seems like you added a special character or left it empty."
         puts "#{question} (example: Nashville, TN)"
         current_location = gets.chomp
       end
