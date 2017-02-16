@@ -56,9 +56,9 @@ require 'geocoder'
       longitude = coordinates[1]
       forecast = ForecastIO.forecast(latitude, longitude).currently
       if forecast.temperature == forecast.apparentTemperature
-        puts "#{forecast.summary} and #{forecast.temperature} in #{current_location}"
+        puts "#{forecast.summary} and #{forecast.temperature.round} in #{current_location}"
       else
-        puts "#{forecast.summary} and #{forecast.temperature} but feels like #{forecast.apparentTemperature} in #{current_location}"
+        puts "#{forecast.summary} and #{forecast.temperature.round} but feels like #{forecast.apparentTemperature.round} in #{current_location}"
       end
     end
 
